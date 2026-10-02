@@ -1,0 +1,17 @@
+{
+  "hash": "78fe69c7560110683411ea3996c1894d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Practical 1 · Getting started\"\n---\n\nWork through the exercises in RStudio. Solutions are shared after the session.\n\n\n\n## Exercise 1 · Calculations\n\n::: {.callout-note .exercise}\n## Exercise 1\nCalculate the mean of the numbers 120, 135, 128 and 142.\n:::\n\n::: {.content-visible when-profile=\"instructor\"}\n::: {.solution}\n\n::: {.cell}\n\n```{.r .cell-code}\nmean(c(120, 135, 128, 142))\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 131.25\n```\n\n\n:::\n:::\n\n:::\n:::\n\n## Exercise 2 · Import the data\n\n::: {.callout-note .exercise}\n## Exercise 2\nImport `patients.csv` into an object called `patients`. How many rows and columns does it have?\n:::\n\n::: {.content-visible when-profile=\"instructor\"}\n::: {.solution}\n\n::: {.cell}\n\n```{.r .cell-code}\ndim(patients)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 200   8\n```\n\n\n:::\n:::\n\n\nThere are 200 patients and 8 variables.\n:::\n:::\n\n## Exercise 3 · First look\n\n::: {.callout-note .exercise}\n## Exercise 3\nWhat is the average age of the patients? How many received the **New** treatment?\n:::\n\n::: {.content-visible when-profile=\"instructor\"}\n::: {.solution}\n\n::: {.cell}\n\n```{.r .cell-code}\nmean(patients$age)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 51.54\n```\n\n\n:::\n\n```{.r .cell-code}\ntable(patients$treatment)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n\n     New Standard \n      93      107 \n```\n\n\n:::\n:::\n\n:::\n:::\n",
+    "supporting": [
+      "practical_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

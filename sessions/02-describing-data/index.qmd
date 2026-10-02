@@ -1,0 +1,18 @@
+---
+title: "Session 2 · Describing data"
+---
+
+**Date:** DD Mon YYYY · 8:00–9:30 PM
+
+## Learning objectives
+
+- Summarise continuous and categorical variables
+- Build a "Table 1" of participant characteristics
+- Make clear figures with ggplot2 in the Neudata palette
+
+## Materials
+
+| | |
+|:--|:--|
+| 🎞️ **Slides** | [Open the slides](slides.qmd) |
+| 🧪 **Practical** | [Hands-on exercises](practical.qmd) |

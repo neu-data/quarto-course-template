@@ -1,0 +1,10 @@
+# Instructor profile: renders the same site with solutions and instructor notes visible.
+#   quarto render --profile instructor
+# The output goes to a separate folder so it is never published by mistake.
+project:
+  output-dir: _site-instructor
+
+website:
+  title: "Course Title — INSTRUCTOR"
+  navbar:
+    background: "#055F56"

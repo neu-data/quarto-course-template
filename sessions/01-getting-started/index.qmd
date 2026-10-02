@@ -1,0 +1,25 @@
+---
+title: "Session 1 · Getting started with R and RStudio"
+---
+
+**Date:** DD Mon YYYY · 8:00–9:30 PM
+
+## Learning objectives
+
+By the end of this session you will be able to:
+
+- Find your way around RStudio
+- Run code, create objects and use functions
+- Import a CSV file and look at its contents
+
+## Materials
+
+| | |
+|:--|:--|
+| 🎞️ **Slides** | [Open the slides](slides.qmd) (press **F** for full screen) |
+| 🧪 **Practical** | [Hands-on exercises](practical.qmd) |
+| 📁 **Data** | [`patients.csv`](../../data/patients.csv) |
+
+## Recap
+
+Write a short summary after the session: key points, common questions, and links to recordings.

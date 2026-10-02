@@ -1,0 +1,23 @@
+---
+title: "Schedule"
+---
+
+All sessions run **online, 8:00–9:30 PM** local time. Each session has slides, a hands-on practical
+and a short recap.
+
+| \# | Date | Session | Materials |
+|:--:|:-----|:--------|:----------|
+| 1 | DD Mon | Getting started with R and RStudio | [Session page](sessions/01-getting-started/index.qmd) |
+| 2 | DD Mon | Describing data: tables and figures | [Session page](sessions/02-describing-data/index.qmd) |
+| 3 | DD Mon | Comparing groups: statistical tests | *coming soon* |
+| 4 | DD Mon | Regression models | *coming soon* |
+| 5 | DD Mon | Putting it together: a full analysis | *coming soon* |
+
+## Before the first session
+
+Complete the [setup](setup.qmd) so that R, RStudio and the course packages are ready.
+
+## Final assignment
+
+A short analysis of the course dataset, submitted by **DD Mon YYYY**. Details are shared in
+session 5.

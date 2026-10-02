@@ -1,0 +1,38 @@
+---
+title: "Setup"
+---
+
+Please complete these steps **before session 1**. They take about 20 minutes.
+
+## 1 · Install R
+
+Download and install the latest version of R for your computer from
+<https://cran.r-project.org>.
+
+## 2 · Install RStudio
+
+Download and install **RStudio Desktop** (free) from
+<https://posit.co/download/rstudio-desktop/>.
+
+## 3 · Install the course packages
+
+Open RStudio, paste this into the **Console** and press Enter:
+
+```r
+install.packages(c("tidyverse", "gtsummary", "rio", "here"))
+```
+
+## 4 · Download the course data
+
+Download [`patients.csv`](data/patients.csv) and save it in a folder called `course` in your
+Documents.
+
+::: {.callout-tip}
+## Check it works
+Run `library(tidyverse)` in the Console. If you see no red **Error** message, you are ready.
+:::
+
+::: {.callout-note}
+## Can't install software on your computer?
+Use [Posit Cloud](https://posit.cloud) in your web browser — free, nothing to install.
+:::

@@ -1,0 +1,55 @@
+---
+title: "Getting started with R and RStudio"
+subtitle: "Session 1"
+author: "Trainer Name, Senior Biostatistician"
+institute: "Neudata Consulting Ltd"
+date: today
+date-format: "DD-MM-YYYY"
+format: neudata-revealjs
+---
+
+# Welcome
+
+## Today
+
+- Tour of RStudio
+- Your first lines of R code
+- Importing the course data
+
+[Ask questions at any time in the chat.]{.neudata-note}
+
+# R basics
+
+## R as a calculator
+
+```{r}
+#| echo: true
+2 + 3
+sqrt(16)
+```
+
+## Objects and functions
+
+```{r}
+#| echo: true
+ages <- c(34, 52, 61, 45)
+mean(ages)
+```
+
+::: {.key-findings}
+`<-` stores a value in an object. Read it as **"gets"**.
+:::
+
+# Your data
+
+## Importing a CSV file
+
+```{r}
+#| echo: true
+patients <- read.csv("../../data/patients.csv")
+head(patients, 4)
+```
+
+## Practical
+
+Open the [practical](practical.qmd) and work through exercises 1–3.

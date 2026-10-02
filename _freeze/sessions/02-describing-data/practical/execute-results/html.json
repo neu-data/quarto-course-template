@@ -1,0 +1,17 @@
+{
+  "hash": "94931cc57245dcb9932aa768f870c092",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Practical 2 · Describing data\"\n---\n\n\n\n## Exercise 1 · Summaries\n\n::: {.callout-note .exercise}\n## Exercise 1\nGive the median and interquartile range of `bmi`, overall and by `sex`.\n:::\n\n::: {.content-visible when-profile=\"instructor\"}\n::: {.solution}\n\n::: {.cell}\n\n```{.r .cell-code}\nquantile(patients$bmi, c(0.25, 0.5, 0.75))\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n   25%    50%    75% \n23.175 25.700 28.300 \n```\n\n\n:::\n\n```{.r .cell-code}\ntapply(patients$bmi, patients$sex, median)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\nFemale   Male \n  25.3   25.9 \n```\n\n\n:::\n:::\n\n:::\n:::\n\n## Exercise 2 · A figure\n\n::: {.callout-note .exercise}\n## Exercise 2\nDraw a histogram of `age`, filled in Neudata teal (`\"#055F56\"`).\n:::\n\n::: {.content-visible when-profile=\"instructor\"}\n::: {.solution}\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(patients, aes(age)) +\n  geom_histogram(binwidth = 5, fill = \"#055F56\", colour = \"white\") +\n  labs(x = \"Age (years)\", y = \"Patients\") +\n  theme_minimal()\n```\n\n::: {.cell-output-display}\n![](practical_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n:::\n:::\n",
+    "supporting": [
+      "practical_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

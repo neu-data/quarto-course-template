@@ -1,0 +1,58 @@
+---
+title: "Practical 1 · Getting started"
+---
+
+Work through the exercises in RStudio. Solutions are shared after the session.
+
+```{r}
+#| include: false
+patients <- read.csv("../../data/patients.csv")
+```
+
+## Exercise 1 · Calculations
+
+::: {.callout-note .exercise}
+## Exercise 1
+Calculate the mean of the numbers 120, 135, 128 and 142.
+:::
+
+::: {.content-visible when-profile="instructor"}
+::: {.solution}
+```{r}
+mean(c(120, 135, 128, 142))
+```
+:::
+:::
+
+## Exercise 2 · Import the data
+
+::: {.callout-note .exercise}
+## Exercise 2
+Import `patients.csv` into an object called `patients`. How many rows and columns does it have?
+:::
+
+::: {.content-visible when-profile="instructor"}
+::: {.solution}
+```{r}
+dim(patients)
+```
+
+There are `r nrow(patients)` patients and `r ncol(patients)` variables.
+:::
+:::
+
+## Exercise 3 · First look
+
+::: {.callout-note .exercise}
+## Exercise 3
+What is the average age of the patients? How many received the **New** treatment?
+:::
+
+::: {.content-visible when-profile="instructor"}
+::: {.solution}
+```{r}
+mean(patients$age)
+table(patients$treatment)
+```
+:::
+:::

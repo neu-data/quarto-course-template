@@ -1,0 +1,21 @@
+{
+  "hash": "02ca15b83faed908afa4e770fa3a60e7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Describing data\"\nsubtitle: \"Session 2\"\nauthor: \"Trainer Name, Senior Biostatistician\"\ninstitute: \"Neudata Consulting Ltd\"\ndate: today\ndate-format: \"DD-MM-YYYY\"\nformat: neudata-revealjs\n---\n\n\n\n# Summaries\n\n## Continuous variables\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsummary(patients$sbp)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   93.0   123.0   134.5   134.1   145.0   184.0 \n```\n\n\n:::\n:::\n\n\n## Categorical variables\n\n\n::: {.cell}\n\n```{.r .cell-code}\ntable(patients$treatment, patients$readmitted)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n          \n           No Yes\n  New      83  10\n  Standard 86  21\n```\n\n\n:::\n:::\n\n\n# Figures\n\n## Blood pressure by treatment\n\n\n::: {.cell output-location='column'}\n\n```{.r .cell-code}\nggplot(patients, aes(treatment, sbp, fill = treatment)) +\n  geom_boxplot(alpha = 0.85, show.legend = FALSE) +\n  scale_fill_manual(values = c(\"#055F56\", \"#0B376C\")) +\n  labs(x = NULL, y = \"Systolic BP (mmHg)\") +\n  theme_minimal(base_size = 16)\n```\n\n::: {.cell-output-display}\n![](slides_files/figure-revealjs/unnamed-chunk-4-1.png){width=576}\n:::\n:::\n\n",
+    "supporting": [
+      "slides_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

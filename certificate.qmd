@@ -1,0 +1,20 @@
+---
+title: "Certificate of completion"
+---
+
+Participants who meet both criteria receive a **Neudata certificate of completion**:
+
+1. **Attendance** — at least 4 of the 5 sessions
+2. **Assignment** — the final assignment submitted by the deadline
+
+Certificates are issued as PDF by email within two weeks of the course end. Each certificate has a
+unique ID that Neudata can verify on request at
+[contact@neu-data.com](mailto:contact@neu-data.com).
+
+::: {.content-visible when-profile="instructor"}
+::: {.callout-important}
+## Instructor note
+Generate certificates with the [`certificate-template`](https://github.com/neu-data/certificate-template)
+repository from the final attendance list (`participants.csv`).
+:::
+:::

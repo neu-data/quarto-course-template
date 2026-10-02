@@ -1,0 +1,53 @@
+---
+pagetitle: "Course Title"
+toc: false
+page-layout: full
+---
+
+::: {.course-hero}
+# Course Title
+Short course promise — e.g. *from never having opened R to running a real clinical analysis.*
+
+::: {.badges}
+[FREE]{} [Beginner-friendly]{} [Online]{} [No coding experience required]{}
+:::
+
+[Register now](https://forms.gle/your-form){.btn .btn-light role="button"}
+:::
+
+## About this course
+
+Two or three sentences on who the course is for, what problem it solves and what participants
+will be able to do at the end.
+
+::: {.facts}
+<div><strong>Format</strong><span>5 online sessions</span></div>
+<div><strong>When</strong><span>Tuesdays, 8:00 PM</span></div>
+<div><strong>Duration</strong><span>90 minutes each</span></div>
+<div><strong>Dates</strong><span>DD Mon – DD Mon YYYY</span></div>
+<div><strong>Where</strong><span>Online</span></div>
+:::
+
+## What you will learn
+
+- Import, clean and describe a real dataset
+- Produce publication-ready tables and figures
+- Run and interpret common statistical tests
+- Fit and explain a regression model
+
+## Trainers
+
+| Trainer | Role |
+|:--------|:-----|
+| **Trainer Name** | Senior Biostatistician — *lead trainer* |
+| **Trainer Name** | Biostatistician and Epidemiologist |
+
+## Who should join
+
+Clinicians, researchers, students and programme staff who collect or use data and want to analyse
+it themselves. No programming or statistics background is needed.
+
+::: {.key-findings}
+**Certificate** — participants who attend at least 4 of 5 sessions and submit the final
+assignment receive a Neudata certificate of completion. See [Certificate](certificate.qmd).
+:::

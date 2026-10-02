@@ -1,0 +1,44 @@
+---
+title: "Practical 2 · Describing data"
+---
+
+```{r}
+#| include: false
+library(ggplot2)
+patients <- read.csv("../../data/patients.csv")
+```
+
+## Exercise 1 · Summaries
+
+::: {.callout-note .exercise}
+## Exercise 1
+Give the median and interquartile range of `bmi`, overall and by `sex`.
+:::
+
+::: {.content-visible when-profile="instructor"}
+::: {.solution}
+```{r}
+quantile(patients$bmi, c(0.25, 0.5, 0.75))
+tapply(patients$bmi, patients$sex, median)
+```
+:::
+:::
+
+## Exercise 2 · A figure
+
+::: {.callout-note .exercise}
+## Exercise 2
+Draw a histogram of `age`, filled in Neudata teal (`"#055F56"`).
+:::
+
+::: {.content-visible when-profile="instructor"}
+::: {.solution}
+```{r}
+#| fig-height: 3.5
+ggplot(patients, aes(age)) +
+  geom_histogram(binwidth = 5, fill = "#055F56", colour = "white") +
+  labs(x = "Age (years)", y = "Patients") +
+  theme_minimal()
+```
+:::
+:::

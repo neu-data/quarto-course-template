@@ -1,0 +1,22 @@
+---
+title: "Resources"
+---
+
+## Books (free online)
+
+- *R for Data Science* — Wickham, Çetinkaya-Rundel & Grolemund · <https://r4ds.hadley.nz>
+- *The Epidemiologist R Handbook* · <https://epirhandbook.com>
+
+## Cheat sheets
+
+- Posit cheat sheets for data import, dplyr and ggplot2 · <https://posit.co/resources/cheatsheets/>
+
+## Getting help
+
+- During the course: ask in the session chat or the course group.
+- After the course: email [contact@neu-data.com](mailto:contact@neu-data.com).
+
+## About Neudata
+
+Neudata Consulting Ltd provides data science, biostatistics and research analytics consulting and
+training. Visit [www.neu-data.com](https://www.neu-data.com) for more courses.

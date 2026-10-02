@@ -1,0 +1,46 @@
+---
+title: "Describing data"
+subtitle: "Session 2"
+author: "Trainer Name, Senior Biostatistician"
+institute: "Neudata Consulting Ltd"
+date: today
+date-format: "DD-MM-YYYY"
+format: neudata-revealjs
+---
+
+```{r}
+#| include: false
+library(ggplot2)
+patients <- read.csv("../../data/patients.csv")
+```
+
+# Summaries
+
+## Continuous variables
+
+```{r}
+#| echo: true
+summary(patients$sbp)
+```
+
+## Categorical variables
+
+```{r}
+#| echo: true
+table(patients$treatment, patients$readmitted)
+```
+
+# Figures
+
+## Blood pressure by treatment
+
+```{r}
+#| output-location: column
+#| fig-width: 6
+#| fig-height: 4.5
+ggplot(patients, aes(treatment, sbp, fill = treatment)) +
+  geom_boxplot(alpha = 0.85, show.legend = FALSE) +
+  scale_fill_manual(values = c("#055F56", "#0B376C")) +
+  labs(x = NULL, y = "Systolic BP (mmHg)") +
+  theme_minimal(base_size = 16)
+```

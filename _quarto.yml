@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: _site
+
+execute:
+  freeze: auto          # results are stored in _freeze/ so the website builds without re-running code
+
+website:
+  title: "Course Title"
+  description: "A hands-on Neudata training course."
+  site-url: "https://neu-data.github.io/course-name/"
+  repo-url: "https://github.com/neu-data/course-name"
+  favicon: images/neudata-logo.png
+  search: true
+  page-navigation: true
+  navbar:
+    logo: images/neudata-logo.png
+    logo-alt: "Neudata Consulting Ltd"
+    title: "Course Title"
+    background: "#04242F"
+    foreground: "#FFFFFF"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: schedule.qmd
+        text: Schedule
+      - href: setup.qmd
+        text: Setup
+      - text: Sessions
+        menu:
+          - href: sessions/01-getting-started/index.qmd
+            text: "1 · Getting started"
+          - href: sessions/02-describing-data/index.qmd
+            text: "2 · Describing data"
+      - href: resources.qmd
+        text: Resources
+      - href: certificate.qmd
+        text: Certificate
+    right:
+      - icon: globe
+        href: https://www.neu-data.com
+        aria-label: Neudata website
+      - icon: github
+        href: https://github.com/neu-data
+        aria-label: Neudata on GitHub
+  page-footer:
+    left: "**Neudata Consulting Ltd** · *Insight. Impact. Innovation.*"
+    center: "Neudata | #ClearDataClearImpact"
+    right: "[www.neu-data.com](https://www.neu-data.com) · [contact@neu-data.com](mailto:contact@neu-data.com)"
+
+format:
+  html:
+    theme: [cosmo, course.scss]
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true

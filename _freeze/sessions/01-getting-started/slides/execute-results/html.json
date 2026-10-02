@@ -1,0 +1,19 @@
+{
+  "hash": "3e8cf2b6b9a3c1d0be5dd63ef12d4df1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Getting started with R and RStudio\"\nsubtitle: \"Session 1\"\nauthor: \"Trainer Name, Senior Biostatistician\"\ninstitute: \"Neudata Consulting Ltd\"\ndate: today\ndate-format: \"DD-MM-YYYY\"\nformat: neudata-revealjs\n---\n\n# Welcome\n\n## Today\n\n- Tour of RStudio\n- Your first lines of R code\n- Importing the course data\n\n[Ask questions at any time in the chat.]{.neudata-note}\n\n# R basics\n\n## R as a calculator\n\n\n::: {.cell}\n\n```{.r .cell-code}\n2 + 3\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 5\n```\n\n\n:::\n\n```{.r .cell-code}\nsqrt(16)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\n\n## Objects and functions\n\n\n::: {.cell}\n\n```{.r .cell-code}\nages <- c(34, 52, 61, 45)\nmean(ages)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 48\n```\n\n\n:::\n:::\n\n\n::: {.key-findings}\n`<-` stores a value in an object. Read it as **\"gets\"**.\n:::\n\n# Your data\n\n## Importing a CSV file\n\n\n::: {.cell}\n\n```{.r .cell-code}\npatients <- read.csv(\"../../data/patients.csv\")\nhead(patients, 4)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n    id age    sex treatment sbp  bmi diabetes readmitted\n1 P001  40 Female       New 103 22.9      Yes         No\n2 P002  59   Male       New 112 26.9       No         No\n3 P003  81   Male       New 143 25.4       No         No\n4 P004  41 Female  Standard 136 20.3       No         No\n```\n\n\n:::\n:::\n\n\n## Practical\n\nOpen the [practical](practical.qmd) and work through exercises 1–3.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

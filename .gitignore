@@ -1,0 +1,7 @@
+/.quarto/
+/_site/
+/_site-instructor/
+.Rhistory
+.Rproj.user/
+*_files/
+participants*.csv
