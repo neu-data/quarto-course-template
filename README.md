@@ -46,6 +46,8 @@ Solutions and instructor notes live in the same files, inside
 
 The publishing workflow checks that no solutions reached the participant site before it deploys.
 
+> **Solutions are hidden on the website, not in the repository.** Because course repositories are public, the solution code is visible to anyone who reads the `.qmd` source on GitHub. That suits courses that release solutions after each session. If solutions must stay secret (e.g. graded assignments), keep them in separate `*-solutions.qmd` files that are git-ignored and stored privately.
+
 ## Start a new course
 
 1. Click **Use this template** on GitHub and name the repository after the course.
